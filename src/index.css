@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.custom-line-chart .recharts-line-dash {
+  stroke: #20C997; /* กำหนดสีเส้นกราฟชุด Income เป็นสีน้ำเงิน */
+}
+
+.custom-line-chart .recharts-line-dash + .recharts-line-dash {
+  stroke: #E74C3C; /* กำหนดสีเส้นกราฟชุด Outcome เป็นสีแดง */
+}
